@@ -1,0 +1,472 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #161d19;
+}
+
+.rectangulo {
+    width: 1585px;
+    height: 780px;
+    border: 1px solid #0b0101;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0749535b;
+    position: relative; /* Establecer posición relativa para que el rectángulo pequeño se posicione dentro de este */
+}
+
+.rectangulo-pequeno {
+    width: 260px;
+    height: 750px;
+    border: 1px solid #0b0101;
+    border-radius: 15px;
+    background-color: #0749535b;
+    position: absolute; /* Establecer posición absoluta para que se ubique dentro del rectángulo grande */
+    top: 50%; /* Posición vertical en el centro del rectángulo grande */
+    left: 9%; /* Posición horizontal en el centro del rectángulo grande */
+    transform: translate(-50%, -50%); /* Centrar el rectángulo pequeño en el centro del rectángulo grande */
+}
+
+.rectangulo-horizontal1 {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #363232d8; /* Color del primer rectángulo horizontal */
+    position: absolute;
+    top: 100px; /* Ajustar la posición vertical según sea necesario */
+    left: 5px; /* Ajustar la posición horizontal según sea necesario */
+    z-index: -1; /* Colocar el rectángulo horizontal detrás de los textos */
+}
+
+.rectangulo-horizontal2 {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #363232d8; /* Color del segundo rectángulo horizontal */
+    position: absolute;
+    top: 100px; /* Ajustar la posición vertical según sea necesario */
+    right: 40px; /* Ajustar la posición horizontal según sea necesario */
+    z-index: -1; /* Colocar el rectángulo horizontal detrás de los textos */
+}
+
+.rectangulo-horizontal3 {
+    width: 215px;
+    height: 70px;
+    border: 1px solid #1380af;
+    border-radius: 15px;
+    background-color: #1c1618a8; /* Color del segundo rectángulo horizontal */
+    position: absolute;
+    top: 165px; /* Ajustar la posición vertical según sea necesario */
+    right: 25px; /* Ajustar la posición horizontal según sea necesario */
+    z-index: -1; /* Colocar el rectángulo horizontal detrás de los textos */
+}
+
+.rectangulo-horizontal4 {
+    width: 900px;
+    height: 30px;
+    border: 1px solid #1380af;
+    border-radius: 15px;
+    background-color: #1c1618a8; /* Color del segundo rectángulo horizontal */
+    position: absolute;
+    top: 180px; /* Ajustar la posición vertical según sea necesario */
+    left: 280px; /* Ajustar la posición horizontal según sea necesario */
+    z-index: -1; /* Colocar el rectángulo horizontal detrás de los textos */
+}
+.rectangulo-horizontal5 {
+    width: 36px;
+    height: 34px;
+    /*border: 1px solid #404a4fd5;*/
+    border-radius: 15px;
+    background-color: #363232d8; /* Color del segundo rectángulo horizontal */
+    position: absolute;
+    top: 93.5%; /* Ajustar la posición vertical según sea necesario */
+    left: 5%; /* Ajustar la posición horizontal según sea necesario */
+    z-index: -1; /* Colocar el rectángulo horizontal detrás de los textos */
+}
+
+
+.rectangulo-horizontal6 {
+    width: 36px;
+    height: 34px;
+    /*border: 1px solid #404a4fd5;*/
+    border-radius: 15px;
+    background-color: #363232d8; /* Color del segundo rectángulo horizontal */
+    position: absolute;
+    top: 93.5%; /* Ajustar la posición vertical según sea necesario */
+    left: 23%; /* Ajustar la posición horizontal según sea necesario */
+    z-index: -1; /* Colocar el rectángulo horizontal detrás de los textos */
+}
+
+.rectangulo-horizontal7 {
+    width: 100px;
+    height: 34px;
+    /*border: 1px solid #404a4fd5;*/
+    border-radius: 15px;
+    background-color: #363232d8; /* Color del segundo rectángulo horizontal */
+    position: absolute;
+    top: 93.5%; /* Ajustar la posición vertical según sea necesario */
+    left: 57%; /* Ajustar la posición horizontal según sea necesario */
+    z-index: -1; /* Colocar el rectángulo horizontal detrás de los textos */
+}
+
+.rectangulo-conversacion {
+    width: 1200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(9, 234, 255);
+    display: flex;
+    top:660px; 
+    right: 30px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  /*Todos los textos de pantalla*/
+
+.texto {
+    color: #ffffff; /* Color del texto en blanco */
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 3%; /* Posición vertical en el centro del rectángulo grande */
+    left: 35%; /* Posición horizontal en el centro del rectángulo grande */
+    transform: translate(-50%, -50%); /* Centrar el texto en el centro del rectángulo grande */
+    z-index: 1; /* Colocar el texto por encima de los rectángulos horizontales */
+}
+
+.texto2 {
+    color: #ffffff; /* Color del texto en blanco */
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 7.25%; /* Posición vertical en el centro del rectángulo grande */
+    left: 35%; /* Posición horizontal en el centro del rectángulo grande */
+    transform: translate(-50%, -50%); /* Centrar el texto en el centro del rectángulo grande */
+    z-index: 1; /* Colocar el texto por encima de los rectángulos horizontales */
+}
+
+.texto3 {
+    color: #ffffff; /* Color del texto en blanco */
+    font-size: 11px;
+    font-weight: bold;
+    position: absolute;
+    top: 98px; /* Posición vertical en el centro del rectángulo grande */
+    left: 70px; /* Posición horizontal en el centro del rectángulo grande */
+    transform: translate(-50%, -50%); /* Centrar el texto en el centro del rectángulo grande */
+    z-index: 1; /* Colocar el texto por encima de los rectángulos horizontales */
+}
+
+.texto4 {
+    color: #ffffff; /* Color del texto en blanco */
+    font-size: 11px;
+    font-weight: bold;
+    position: absolute;
+    top: 98px; /* Posición vertical en el centro del rectángulo grande */
+    left: 180px; /* Posición horizontal en el centro del rectángulo grande */
+    transform: translate(-50%, -50%); /* Centrar el texto en el centro del rectángulo grande */
+    z-index: 1; /* Colocar el texto por encima de los rectángulos horizontales */
+}
+
+.texto5 {
+    color: #ffffff; /* Color del texto en blanco */
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 174px; /* Posición vertical en el centro del rectángulo grande */
+    left: 105px; /* Posición horizontal en el centro del rectángulo grande */
+    transform: translate(-50%, -50%); /* Centrar el texto en el centro del rectángulo grande */
+    z-index: 1; /* Colocar el texto por encima de los rectángulos horizontales */
+}
+
+
+.texto6 {
+    color: #ffffff; /* Color del texto en blanco */
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 3%; /* Posición vertical en el centro del rectángulo grande */
+    left: 28%; /* Posición horizontal en el centro del rectángulo grande */
+    transform: translate(-50%, -50%); /* Centrar el texto en el centro del rectángulo grande */
+    z-index: 1; /* Colocar el texto por encima de los rectángulos horizontales */
+}
+
+.texto7 {
+    color: #ffffff; /* Color del texto en blanco */
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 8%; /* Posición vertical en el centro del rectángulo grande */
+    left: 26%; /* Posición horizontal en el centro del rectángulo grande */
+    transform: translate(-50%, -50%); /* Centrar el texto en el centro del rectángulo grande */
+    z-index: 1; /* Colocar el texto por encima de los rectángulos horizontales */
+}
+
+.texto8 {
+    color: #ffffff; /* Color del texto en blanco */
+    font-size: 16px;
+    font-weight: lighter;
+    position: absolute;
+    top: 23.5%; /* Posición vertical en el centro del rectángulo grande */
+    left: 38%; /* Posición horizontal en el centro del rectángulo grande */
+    transform: translate(-50%, -50%); /* Centrar el texto en el centro del rectángulo grande */
+    z-index: 1; /* Colocar el texto por encima de los rectángulos horizontales */
+}
+
+.texto9 {
+    color: #ffffff; /* Color del texto en blanco */
+    font-size: 16px;
+    font-weight: lighter;
+    position: absolute;
+    top: 85.9%; /* Posición vertical en el centro del rectángulo grande */
+    left: 31%; /* Posición horizontal en el centro del rectángulo grande */
+    transform: translate(-50%, -50%); /* Centrar el texto en el centro del rectángulo grande */
+    z-index: 1; /* Colocar el texto por encima de los rectángulos horizontales */
+}
+
+.texto10 {
+    color: #ffffff; /* Color del texto en blanco */
+    font-size: 11px;
+    font-weight: lighter;
+    position: absolute;
+    top: 95%; /* Posición vertical en el centro del rectángulo grande */
+    left: 79.6%; /* Posición horizontal en el centro del rectángulo grande */
+    transform: translate(-50%, -50%); /* Centrar el texto en el centro del rectángulo grande */
+    z-index: 1; /* Colocar el texto por encima de los rectángulos horizontales */
+}
+
+.texto11 {
+    color: #ffffff; /* Color del texto en blanco */
+    font-size: 11.2px;
+    font-weight: lighter;
+    position: absolute;
+    top: 27%; /* Posición vertical en el centro del rectángulo grande */
+    left: 43%; /* Posición horizontal en el centro del rectángulo grande */
+    transform: translate(-50%, -50%); /* Centrar el texto en el centro del rectángulo grande */
+    z-index: 1; /* Colocar el texto por encima de los rectángulos horizontales */
+}
+
+
+
+/*imagenes de la pantalla*/
+
+
+
+.img {
+    width: 45px; /* Ancho de la imagen  */
+    height: 45px; /* Alto de la imagen*/
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    top: 7%; /* Posición vertical al 50% de la imagen */
+    left: 85%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img1 {
+    width: 24px; /* Ancho de la imagen  */
+    height: 24px; /* Alto de la imagen*/
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    filter: invert(100%);
+    top: 15.4%; /* Posición vertical al 50% de la imagen */
+    left: 12.8%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img2 {
+    width: 24px; /* Ancho de la imagen  */
+    height: 24px; /* Alto de la imagen*/
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    filter: invert(100%);
+    top: 15.4%; /* Posición vertical al 50% de la imagen */
+    left: 55%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img3 {
+    width: 24px; /* Ancho de la imagen  */
+    height: 24px; /* Alto de la imagen*/
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    filter: invert(100%);
+    top: 95.8%; /* Posición vertical al 50% de la imagen */
+    left: 12%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img4 {
+    width: 24px; /* Ancho de la imagen  */
+    height: 24px; /* Alto de la imagen*/
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    filter: invert(100%);
+    top: 95.8%; /* Posición vertical al 50% de la imagen */
+    left: 30%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img5 {
+    width: 24px; /* Ancho de la imagen  */
+    height: 24px; /* Alto de la imagen*/
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    filter: invert(100%);
+    top: 95.8%; /* Posición vertical al 50% de la imagen */
+    left: 64%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img6 {
+    width: 34px; /* Ancho de la imagen  */
+    height: 34px; /* Alto de la imagen*/
+    border-radius: 12%;
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    top: 19%; /* Posición vertical al 50% de la imagen */
+    left: 20%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img7 {
+    width: 40px; /* Ancho de la imagen  */
+    height: 35px; /* Alto de la imagen*/
+    border-radius: 12%;
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    top: 92.5%; /* Posición vertical al 50% de la imagen */
+    left: 96%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img8 {
+    width: 34px; /* Ancho de la imagen  */
+    height: 33px; /* Alto de la imagen*/
+    filter: invert(100%);
+    border: 1px solid #010000;
+    border-radius: 12%;
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    top: 7%; /* Posición vertical al 50% de la imagen */
+    left: 89%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img9 {
+    width: 34px; /* Ancho de la imagen  */
+    height: 33px; /* Alto de la imagen*/
+    filter: invert(100%);
+    border: 1px solid #010000;
+    border-radius: 12%;
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    top: 7%; /* Posición vertical al 50% de la imagen */
+    left: 92%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img10 {
+    width: 34px; /* Ancho de la imagen  */
+    height: 33px; /* Alto de la imagen*/
+    filter: invert(100%);
+    border: 1px solid #010000;
+    border-radius: 12%;
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    top: 7%; /* Posición vertical al 50% de la imagen */
+    left: 95%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.linea-horizontal {
+    position: absolute;
+    top: 75%;
+    left: 17.1%;
+    width: 82.77%; /* Ancho de la línea, ajustado al 100% del contenedor */
+    height: 0.5px; /* Grosor de la línea */
+    background-color: rgb(9, 234, 255) /* Color de la línea (negro en este caso) */
+}
+
+.img11 {
+    width: 31px; /* Ancho de la imagen  */
+    height: 30px; /* Alto de la imagen*/
+    filter: invert(100%);
+    border: 1px solid #010000;
+    border-radius: 12%;
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    top: 77.7%; /* Posición vertical al 50% de la imagen */
+    left: 22%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img12 {
+    width: 31px; /* Ancho de la imagen  */
+    height: 30px; /* Alto de la imagen*/
+    filter: invert(100%);
+    border: 1px solid #010000;
+    border-radius: 12%;
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    top: 77.7%; /* Posición vertical al 50% de la imagen */
+    left: 24.5%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img13 {
+    width: 31px; /* Ancho de la imagen  */
+    height: 30px; /* Alto de la imagen*/
+    filter: invert(100%);
+    border: 1px solid #010000;
+    border-radius: 12%;
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    top: 77.7%; /* Posición vertical al 50% de la imagen */
+    left: 27%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img14 {
+    width: 31px; /* Ancho de la imagen  */
+    height: 30px; /* Alto de la imagen*/
+    filter: invert(100%);
+    border: 1px solid #010000;
+    border-radius: 12%;
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    top: 77.7%; /* Posición vertical al 50% de la imagen */
+    left: 29.5%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img15 {
+    width: 31px; /* Ancho de la imagen  */
+    height: 30px; /* Alto de la imagen*/
+    filter: invert(100%);
+    border: 1px solid #010000;
+    border-radius: 12%;
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    top: 77.7%; /* Posición vertical al 50% de la imagen */
+    left: 31.9%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
+
+.img16 {
+    width: 31px; /* Ancho de la imagen  */
+    height: 30px; /* Alto de la imagen*/
+    filter: invert(100%);
+    border: 1px solid #010000;
+    border-radius: 12%;
+    position: absolute; /* Permite posicionar la imagen dentro de la imagen  */
+    top: 77.7%; /* Posición vertical al 50% de la imagen */
+    left: 34.4%; /* Posición horizontal al 50% de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen exactamente */
+    z-index: 1; /* Colocar la imagen por encima de los rectángulos horizontales */
+}
